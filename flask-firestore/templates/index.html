@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Firestore Demo</title>
+</head>
+<body>
+    <h2>Famous Computer Scientists</h2>
+    <ul>
+        {% for doc in docs %}
+        <li>
+            {{ doc["first"] }} {{ doc["last"] }} - Born in {{ doc["birthyear"] }}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h3>Add new Scientist:</h3>
+    <form action="" method="post">
+        <p>
+            <label for="first">First name</label>
+            <input type="text" name="first">
+        </p>
+        <p>
+            <label for="last">Last name</label>
+            <input type="text" name="last">
+        </p>
+        <p>
+            <label for="birthyear">Year of birth</label>
+            <input type="text" name="birthyear">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+</body>
+</html>
