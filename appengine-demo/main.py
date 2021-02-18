@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    #sample_text = "This app was written in Python 3"
+    sample_text = "This app was written in Python 3"
     return render_template('index.html', sample_text=sample_text)
 
 
