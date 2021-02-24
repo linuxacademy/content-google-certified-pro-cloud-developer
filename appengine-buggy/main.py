@@ -17,7 +17,7 @@ def index():
     # only set value of sample_text 70% of the time
     random_value = random()
     if random_value < 0.7:
-        sample_text = "This app was written in Python 3. It will fail half of the time."
+        sample_text = "This app was written in Python 3. It will fail some of the time."
     return render_template('index.html', sample_text=sample_text)
 
 
