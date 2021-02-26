@@ -1,5 +1,7 @@
 from flask import Flask, render_template
 from random import random
+import logging
+logging.basicConfig(level=logging.INFO)
 
 app = Flask(__name__)
 
